@@ -220,4 +220,27 @@ button {
         border-top: 1px solid black;
     }
 
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content-left {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .top-content-right {
+        padding-left: 0;
+    }
+
+    .bottom-content{
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+
+    .bottom-content div {
+        width: 100%;
+        border-bottom: 0;
+    }
+
 }
