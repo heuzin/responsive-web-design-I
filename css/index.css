@@ -185,4 +185,12 @@ button {
         width: 30%;
         margin-bottom: 20px;
     }
+
+    .title-content{
+        justify-content: center;
+    }
+
+    .main-image {
+        display: none;
+    }
 }
