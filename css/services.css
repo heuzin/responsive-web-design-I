@@ -166,3 +166,19 @@ footer {
 ul li:first-child {
 	padding-top: 6px;
 }
+
+@media (max-width: 800px) {
+
+    body {
+        margin: 0 20%;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    } 
+
+}
