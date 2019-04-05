@@ -63,139 +63,128 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
 	margin: 0 30%;
 }
 
-.header-content {
+header div {
 	display: flex;
+	align-content: center;
 	justify-content: space-between;
-	margin-bottom: 40px;
 	align-items: center;
+	margin-bottom: 10px;
 }
 
-.logo {
-	width: 20%;
-}
-
-header nav {
-	word-spacing: 35px;
+header div nav {
+	word-spacing: 20px;
 	font-size: 10px;
 }
-
-header nav a {
+header div nav a {
 	text-decoration: none;
 	color: gray;
 }
 
-.title-content {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 50px;
-	border-bottom: 1px solid black;
-	margin-bottom: 20px;
+.services-header-img {
+	width: 100%;
+	margin-bottom: 15px;
 }
 
-.main-image {
-	height: 250px;
-    width: 250px;
-}
-
-.title-content div {
-	display: flex;
-    align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	width: 275px;
-}
-
-.title-content div h1 {
-	font-size: 45px;
-	text-align: center;
-}
-
-button {
+.button-default {
+	margin-top: 12px;
 	background-color: white;
-    border: 1px solid black;
-    padding: 2px 15px;
+	border: 1px solid black;
+	padding: 5px 20px;
+	font-size: 8px;
 }
 
 .top-content {
+	padding-bottom: 15px;
+    margin-bottom: 15px;
+	border-bottom: 2px solid black;
+	text-align: justify;
+}
+
+section.middle-content {
+	text-align: justify;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 20px;
 }
 
-.top-content div {
-	font-size: 12px;
-}
-
-.top-content-left {
-	padding-right: 10px;
-}
-
-.top-content-right {
-	padding-left: 10px;
-}
-
-.middle-img {
-	width: 100%;
-	margin-bottom: 20px;
+section div.middle-text {
+	width: 47%;
+    padding: 25px;
+    background-color: lightgray;
+    margin: 20px 0;
+    height: 190px;
+	font-size: 11px;
+	border: 1px solid black;
 }
 
 .bottom-content {
+	font-size: 11px;
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	padding-top: 20px;
+    border-top: 1px solid black;
 }
 
-.bottom-content div {
-	font-size: 12px;
-	width: 900px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid black;
-	padding-right: 5px;
+section p.bottom-paragraph {
+	width: 250px;
 }
 
-.footer-content {
-	margin: 20px 0;
-    font-size: 12px;
+.services-info-img {
+	width: 47%;
+	height: 170px;
+	display: flex;
+    align-self: flex-end;
 }
 
-.footer-content p {
-	margin: 10px 0;
+section div.facts-about {
+	display: flex;
+    flex-direction: column;
+    width: 100px;
 }
 
-#copyright {
-	font-size: 12px;
-    text-align: center;
+footer {
+	display: flex;
+    justify-content: center;
+	padding-top: 20px;
+	font-size: 11px;
 }
 
-@media (max-width: 800px){
+.facts-about {
+	list-style: inside;
+}
+
+.facts-about li {
+	padding: 3px 0;
+}
+
+ul li:first-child {
+	padding-top: 6px;
+}
+
+@media (max-width: 800px) {
+
     body {
         margin: 0 20%;
     }
 
     .header-content {
-       flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 
     .logo {
-        width: 30%;
         margin-bottom: 20px;
-    }
+    } 
 
-    .title-content{
-        justify-content: center;
-    }
-
-    .main-image {
-        display: none;
-    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
+
     body {
         margin: 0 10%;
     }
@@ -220,27 +209,25 @@ button {
         border-top: 1px solid black;
     }
 
-    .top-content {
+    .middle-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .top-content-left {
-        padding-right: 0;
-        margin-bottom: 10px;
+    section div.middle-text {
+        width: 90%;
     }
 
-    .top-content-right {
-        padding-left: 0;
-    }
-
-    .bottom-content{
-        flex-direction: column;
-        border-bottom: 1px solid black;
+    .services-info-img {
+        display: none;
     }
 
     .bottom-content div {
         width: 100%;
-        border-bottom: 0;
+    }
+
+    section p.bottom-paragraph {
+        width: 100%;
     }
 
 }
